@@ -1,5 +1,5 @@
 package com.brmayi.yuna.service;
 
-public interface ShowUndeclaredThrowableException {
+public interface ShowUndeclared {
     void showException();
 }

@@ -1,7 +1,7 @@
 package com.brmayi.yuna.controller;
 
-import com.brmayi.yuna.service.ShowUndeclaredThrowableException;
-import com.brmayi.yuna.service.ShowUndeclaredThrowableExceptionService;
+import com.brmayi.yuna.service.ShowUndeclared;
+import com.brmayi.yuna.service.ShowUndeclaredService;
 import com.brmayi.yuna.util.ObjProxy;
 import com.google.common.collect.Lists;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,17 +27,16 @@ import java.util.concurrent.TimeoutException;
 public class ExceptionController {
     private static final String prefix = "ExceptionController消息: ";
 
-    @GetMapping("/exception")
-    public String showAllException() {
+    @GetMapping("/throwable")
+    public String showAllThrowable() {
         return
-            "<ul><li>Throwable</li>" +
+            "<ul><li>异常和错误基类</li>" +
                 "<ul>" +
                     "<li><a href='/errorThrowable'>错误</a></li>" +
                     "<ul>" +
                        "<li>虚拟机错误</li>" +
-                          "<ul><li>内部错误</li></ul>" +
-                          "<li><a href='/threadDeath'>线程死掉</a></li>" +
-                       "</ul>" +
+                       "<ul><li>内部错误</li></ul>" +
+                       "<li><a href='/threadDeath'>线程死掉</a></li>" +
                     "</ul>" +
                 "</ul>" +
                 "<ul>" +
@@ -50,8 +49,7 @@ public class ExceptionController {
                          "<li><a href='/undeclared'>未声明异常</a></li>" +
                          "<li><a href='/illegalArgument'>非法参数异常</a></li>" +
                       "</ul>" +
-                "   <ul>" +
-                "     <li>非运行时异常</li>" +
+                    "</ul>"+
                       "<ul>" +
                           "<li><a href='/io'>输入输出异常</a></li>" +
                            "<ul>" +
@@ -62,20 +60,21 @@ public class ExceptionController {
                                  "</ul>" +
                               "<li><a href='/unknownHost'>主机名未知异常</a></li>" +
                             "</ul>" +
-                "<li><a href='/timeout'>超时异常</a></li>" +
-                "<li>反射操作异常</li>"+
-                "<ul>" +
-                   "<li><a href='/classNotFound'>类找不到异常</a></li>" +
-                   "<li>被调用目标异常</li>" +
-                   "<li>实例化异常</li>" +
-                   "<li>非法访问异常</li>" +
+                             "<li><a href='/timeout'>超时异常</a></li>" +
+                             "<li>反射操作异常</li>"+
+                            "<ul>" +
+                               "<li><a href='/classNotFound'>类找不到异常</a></li>" +
+                               "<li>被调用目标异常</li>" +
+                               "<li>实例化异常</li>" +
+                               "<li>非法访问异常</li>" +
+                            "</ul>"+
+                            "<li>Servlet异常</li>"+
+                            "<ul>" +
+                                "<li>嵌套Servlet异常</li>" +
+                            "</ul>"+
+                    "</ul>"+
                 "</ul>"+
-                "<li>Servlet异常</li>"+
-                "<ul>" +
-                    "<li>嵌套Servlet异常</li>" +
-                "</ul>"+
-                "</ul>"+
-                "</ul>";
+            "</ul>";
     }
 
     @GetMapping("/npe")
@@ -86,7 +85,7 @@ public class ExceptionController {
 
     @GetMapping("/illegalArgument")
     public String showIllegalArgumentException() {
-        ShowUndeclaredThrowableException service = new ShowUndeclaredThrowableExceptionService();
+        ShowUndeclared service = new ShowUndeclaredService();
         Class<?>[] classes = service.getClass().getInterfaces();
         List<Class> list = Lists.newArrayList();
         for (int i = 0; i <= 65537; i++) {
@@ -99,10 +98,9 @@ public class ExceptionController {
 
     @GetMapping("/undeclared")
     public String showUndeclaredThrowableException() {
-        ShowUndeclaredThrowableException service = new ShowUndeclaredThrowableExceptionService();
-        ShowUndeclaredThrowableException serviceProxy = (ShowUndeclaredThrowableException) Proxy.newProxyInstance(service.getClass().getClassLoader(),
+        ShowUndeclared service = new ShowUndeclaredService();
+        ShowUndeclared serviceProxy = (ShowUndeclared) Proxy.newProxyInstance(service.getClass().getClassLoader(),
                 service.getClass().getInterfaces(), new ObjProxy(service));
-        System.out.println("realname=" + serviceProxy.getClass().getName());
         serviceProxy.showException();
         return prefix + "异常未抛出";
     }
