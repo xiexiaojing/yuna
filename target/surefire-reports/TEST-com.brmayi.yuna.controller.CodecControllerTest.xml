@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="com.brmayi.yuna.controller.IndexControllerTest" time="2.545" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="com.brmayi.yuna.controller.CodecControllerTest" time="0.773" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.3+12-b304.10"/>
@@ -45,7 +45,7 @@
     <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.2 package"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.2 install"/>
     <property name="java.home" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2\jbr"/>
     <property name="user.language" value="zh"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -63,11 +63,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.brmayi.yuna.controller.IndexControllerTest" name="showError" time="0.448"/>
-  <testcase classname="com.brmayi.yuna.controller.IndexControllerTest" name="showUndeclaredThrowableException" time="0.014"/>
-  <testcase classname="com.brmayi.yuna.controller.IndexControllerTest" name="showIOException" time="0.01"/>
-  <testcase classname="com.brmayi.yuna.controller.IndexControllerTest" name="showArithmeticException" time="0.009"/>
-  <testcase classname="com.brmayi.yuna.controller.IndexControllerTest" name="showThreadDeath" time="0.007"/>
-  <testcase classname="com.brmayi.yuna.controller.IndexControllerTest" name="showConnectException" time="2.05"/>
-  <testcase classname="com.brmayi.yuna.controller.IndexControllerTest" name="showNullPointerException" time="0.007"/>
+  <testcase classname="com.brmayi.yuna.controller.CodecControllerTest" name="writeStringAsString" time="0.711"/>
+  <testcase classname="com.brmayi.yuna.controller.CodecControllerTest" name="readPojoValue" time="0.049"/>
+  <testcase classname="com.brmayi.yuna.controller.CodecControllerTest" name="writePojoAsString" time="0.013"/>
 </testsuite>
