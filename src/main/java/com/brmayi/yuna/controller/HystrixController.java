@@ -1,8 +1,6 @@
 package com.brmayi.yuna.controller;
 
-import com.brmayi.yuna.model.Pojo;
 import com.brmayi.yuna.util.DemoHystrixCommand;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.GetMapping;

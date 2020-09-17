@@ -1,0 +1,4 @@
+[MASTER] 15:34:32.550 [main] ERROR ExternalProcessHandler - Class com.brmayi.yuna.Application. Clients have not finished yet, although a timeout occurred.
+ClientNode: JUNIT_CHECK
+
+[MASTER] 15:34:35.539 [Thread-3] ERROR ExternalProcessHandler - Exception while reading output of client process. Stream closed
