@@ -6,4 +6,5 @@ import lombok.Data;
 public class Pojo {
     private int id;
     private String value;
+    private String detail;
 }

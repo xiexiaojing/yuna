@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.sxt.mapper.UserMapper">
+
+      <insert id="insert" parameterType="User"
+          keyColumn="id"
+          keyProperty="id"
+          useGeneratedKeys="true"
+      >
+          insert into user (name,password,age)values(#{name},#{password},#{age})
+
+      </insert>
+      <!-- 单行查询
+          <select resultType ="">
+          查询功能的标签
+          resultType : 返回结果的数据类型，和接口对应方法的返回类型必须一致
+       -->
+      <select id="selectByPrimaryKey" parameterType="Integer" resultType="User">
+          <!--  #{对象属性} ，主键理论上任何值都可以 #{abc}，#{xxx},可以不用对象属性-->
+          select * from user where id = #{id}
+      </select>
+
+      <!-- 多行查询
+          无论单行或者多行查询，返回的数据类型都是 对应 pojo 对应的对象类型
+       -->
+      <select id="selectList" resultType="User">
+          select * from user
+      </select>
+
+      <!-- 删除操作 -->
+      <delete id="deleteByPrimaryKey" parameterType="Integer">
+          delete from user where id = #{id}
+      </delete>
+
+
+      <!-- 修改操作 -->
+      <update id="updateByPrimaryKey" parameterType="User">
+          <!-- 固定语义的sql语句 -->
+          update user set name = #{name},password = #{password},age = #{age} where id = #{id}
+      </update>
+
+</mapper>

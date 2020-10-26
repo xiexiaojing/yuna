@@ -2,10 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4eb7b78d-2aed-4032-90d9-4fc905f1454a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.evosuite/best-tests/com/brmayi/yuna/util/ObjProxy_ESTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/.evosuite/best-tests/com/brmayi/yuna/util/ObjProxy_ESTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_2_0_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/MyBatisStartUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mapper/UserMapper" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaInvocationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaSqlDeal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/brmayi/yuna/controller/GuavaCacheTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/brmayi/yuna/controller/JDBCMySQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/brmayi/yuna/service/UserServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/brmayi/yuna/controller/EncryptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brmayi/yuna/controller/EncryptionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/brmayi/yuna/controller/EncryptionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/brmayi/yuna/controller/EncryptionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/controller/JacksonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/controller/JacksonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/model/Pojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/model/Pojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/brmayi/yuna/controller/JacksonControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brmayi/yuna/controller/JacksonControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/controller/JacksonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/controller/JacksonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/model/Pojo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/model/Pojo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/brmayi/yuna/controller/JacksonControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/brmayi/yuna/controller/JacksonControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yuna.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yuna.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +63,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -57,13 +92,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs.jest.jest_package" value="" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.brmayi.yuna.controller" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.brmayi.yuna" />
       <recent name="com.brmayi.yuna.controller" />
     </key>
   </component>
@@ -79,8 +119,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EncryptionTest.desCiper">
-    <configuration name="EncryptionTest.client" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.MyBatisStartUp">
+    <configuration name="MyBatisStartUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.brmayi.yuna.MyBatisStartUp" />
+      <module name="yuna" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.brmayi.yuna.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuavaCacheTest.testRawWeak" type="JUnit" factoryName="JUnit">
+      <module name="yuna" />
+      <option name="PACKAGE_NAME" value="com.brmayi.yuna.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.brmayi.yuna.controller.GuavaCacheTest" />
+      <option name="METHOD_NAME" value="testRawWeak" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Xms200M -Xms200M -XX:+PrintGCDetails" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuavaCacheTest.testStrong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yuna" />
       <extension name="coverage">
         <pattern>
@@ -89,14 +154,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.brmayi.yuna.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.brmayi.yuna.controller.EncryptionTest" />
-      <option name="METHOD_NAME" value="client" />
+      <option name="MAIN_CLASS_NAME" value="com.brmayi.yuna.controller.GuavaCacheTest" />
+      <option name="METHOD_NAME" value="testStrong" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Xms4096m -Xmx4096m -XX:+UseG1GC -XX:MaxGCPauseMillis=20 -XX:+PrintGCDetails -XX:+PrintStringTableStatistics -XX:+PrintSafepointStatistics -XX:+PrintGCApplicationStoppedTime" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EncryptionTest.client1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JacksonControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yuna" />
       <extension name="coverage">
         <pattern>
@@ -105,68 +172,56 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.brmayi.yuna.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.brmayi.yuna.controller.EncryptionTest" />
-      <option name="METHOD_NAME" value="client1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.brmayi.yuna.controller.JacksonControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EncryptionTest.desCiper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceImplTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yuna" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.brmayi.yuna.controller.*" />
+          <option name="PATTERN" value="com.brmayi.yuna.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.brmayi.yuna.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.brmayi.yuna.controller.EncryptionTest" />
-      <option name="METHOD_NAME" value="desCiper" />
+      <option name="PACKAGE_NAME" value="com.brmayi.yuna.service" />
+      <option name="MAIN_CLASS_NAME" value="com.brmayi.yuna.service.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EncryptionTest.server" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="yuna" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.brmayi.yuna.controller.*" />
+          <option name="PATTERN" value="com.brmayi.yuna.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.brmayi.yuna.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.brmayi.yuna.controller.EncryptionTest" />
-      <option name="METHOD_NAME" value="server" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.brmayi.yuna.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EncryptionTest.server1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="yuna" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.brmayi.yuna.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.brmayi.yuna.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.brmayi.yuna.controller.EncryptionTest" />
-      <option name="METHOD_NAME" value="server1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="JUnit.GuavaCacheTest.testRawWeak" />
+      <item itemvalue="JUnit.GuavaCacheTest.testStrong" />
+      <item itemvalue="JUnit.JacksonControllerTest" />
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="JUnit.UserServiceImplTest.test" />
+      <item itemvalue="Application.MyBatisStartUp" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EncryptionTest.desCiper" />
-        <item itemvalue="JUnit.EncryptionTest.client" />
-        <item itemvalue="JUnit.EncryptionTest.server" />
-        <item itemvalue="JUnit.EncryptionTest.client1" />
-        <item itemvalue="JUnit.EncryptionTest.server1" />
+        <item itemvalue="Application.MyBatisStartUp" />
+        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="JUnit.UserServiceImplTest.test" />
+        <item itemvalue="JUnit.JacksonControllerTest" />
+        <item itemvalue="JUnit.GuavaCacheTest.testStrong" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +243,11 @@
       <workItem from="1600502193853" duration="7288000" />
       <workItem from="1600513504159" duration="356000" />
       <workItem from="1600513890315" duration="149000" />
-      <workItem from="1600514067602" duration="10135000" />
+      <workItem from="1600514067602" duration="14905000" />
+      <workItem from="1600652938158" duration="30304000" />
+      <workItem from="1603276574556" duration="659000" />
+      <workItem from="1603277943896" duration="8271000" />
+      <workItem from="1603346606663" duration="31949000" />
     </task>
     <servers />
   </component>
@@ -238,6 +297,36 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/brmayi/yuna/controller/EncryptionTest.java</url>
           <line>90</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/google/guava/guava/20.0/guava-20.0-sources.jar!/com/google/common/cache/CacheBuilder.java</url>
+          <line>827</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/google/guava/guava/20.0/guava-20.0-sources.jar!/com/google/common/cache/CacheBuilder.java</url>
+          <line>837</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/google/guava/guava/20.0/guava-20.0-sources.jar!/com/google/common/cache/LocalCache.java</url>
+          <line>4880</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/google/guava/guava/20.0/guava-20.0-sources.jar!/com/google/common/cache/LocalCache.java</url>
+          <line>238</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/brmayi/yuna/controller/GuavaCacheTest.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/BaseExecutor.java</url>
+          <line>337</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
