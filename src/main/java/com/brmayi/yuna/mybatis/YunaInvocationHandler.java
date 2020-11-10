@@ -24,7 +24,7 @@ public class YunaInvocationHandler implements InvocationHandler {
         Insert insert = method.getAnnotation(Insert.class);
         if (insert != null) {
             String sql = insert.value()[0];
-            System.out.println("插入语句为"+s);
+            System.out.println("插入语句为"+sql);
             YunaSqlDeal yunaSqlDeal = new YunaSqlDeal();
             yunaSqlDeal.insert(sql, Arrays.toString(args));
 

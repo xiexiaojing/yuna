@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4eb7b78d-2aed-4032-90d9-4fc905f1454a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mapper/BookMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/Dal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/DalAndGray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/Gray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaInvocationHandlerBak.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/MyBatisStartUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/MyBatisStartUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/controller/JacksonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/controller/JacksonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/model/Pojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/model/Pojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaInvocationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaSqlDeal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaSqlDeal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/brmayi/yuna/controller/JDBCMySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brmayi/yuna/controller/JDBCMySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/MyBatisStartUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/MyBatisStartUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/controller/JacksonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/controller/JacksonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/model/Pojo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/model/Pojo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/mybatis/YunaInvocationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/mybatis/YunaInvocationHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/mybatis/YunaSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/mybatis/YunaSession.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/brmayi/yuna/controller/JDBCMySQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/brmayi/yuna/controller/JDBCMySQL.class" afterDir="false" />
-    </list>
+    <list default="true" id="4eb7b78d-2aed-4032-90d9-4fc905f1454a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +208,7 @@
       <workItem from="1603277943896" duration="8271000" />
       <workItem from="1603346606663" duration="63524000" />
       <workItem from="1604998473221" duration="67000" />
-      <workItem from="1604998616185" duration="10645000" />
+      <workItem from="1604998616185" duration="11233000" />
     </task>
     <servers />
   </component>
