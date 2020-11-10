@@ -29,9 +29,11 @@ public class JDBCMySQL {
             e.printStackTrace();
         }
         //3、向数据库中插入一条数据
-        String sql = "INSERT INTO person(name,age) VALUES ('高山流水',20)";
+        String sql = "INSERT INTO person(name,age) VALUES (?,?)";
         try {
             stmt = conn.prepareStatement(sql);
+            stmt.setString(1,"陈昆仑");
+            stmt.setInt(2,21);
             stmt.executeQuery();
         } catch (SQLException e) {
             e.printStackTrace();

@@ -2,43 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4eb7b78d-2aed-4032-90d9-4fc905f1454a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_2_0_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/MyBatisStartUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mapper/UserMapper" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaInvocationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaSqlDeal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/brmayi/yuna/controller/GuavaCacheTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/brmayi/yuna/controller/JDBCMySQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/brmayi/yuna/service/UserServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mapper/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/Dal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/DalAndGray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/Gray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaInvocationHandlerBak.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/MyBatisStartUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/MyBatisStartUp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/controller/JacksonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/controller/JacksonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/model/Pojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/model/Pojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/brmayi/yuna/controller/JacksonControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brmayi/yuna/controller/JacksonControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaInvocationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaSqlDeal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brmayi/yuna/mybatis/YunaSqlDeal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/brmayi/yuna/controller/JDBCMySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brmayi/yuna/controller/JDBCMySQL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/MyBatisStartUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/MyBatisStartUp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/controller/JacksonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/controller/JacksonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/mapper/UserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/model/Pojo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/model/Pojo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/brmayi/yuna/controller/JacksonControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/brmayi/yuna/controller/JacksonControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yuna.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yuna.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/mybatis/YunaInvocationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/mybatis/YunaInvocationHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/mybatis/YunaSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/brmayi/yuna/mybatis/YunaSession.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/brmayi/yuna/controller/JDBCMySQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/brmayi/yuna/controller/JDBCMySQL.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,9 +49,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JavaFXApplication" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -103,6 +89,8 @@
       <recent name="com.brmayi.yuna.controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.brmayi.yuna.mybatis" />
+      <recent name="com.brmayi.yuna.mapper" />
       <recent name="com.brmayi.yuna" />
       <recent name="com.brmayi.yuna.controller" />
     </key>
@@ -119,13 +107,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyBatisStartUp">
+  <component name="RunManager" selected="Application.YunaInvocationHandler">
     <configuration name="MyBatisStartUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.brmayi.yuna.MyBatisStartUp" />
       <module name="yuna" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.brmayi.yuna.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="YunaInvocationHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.brmayi.yuna.mybatis.YunaInvocationHandler" />
+      <module name="yuna" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.brmayi.yuna.mybatis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,24 +141,6 @@
       <option name="METHOD_NAME" value="testRawWeak" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-Xms200M -Xms200M -XX:+PrintGCDetails" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GuavaCacheTest.testStrong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="yuna" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.brmayi.yuna.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.brmayi.yuna.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.brmayi.yuna.controller.GuavaCacheTest" />
-      <option name="METHOD_NAME" value="testStrong" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-Xms4096m -Xmx4096m -XX:+UseG1GC -XX:MaxGCPauseMillis=20 -XX:+PrintGCDetails -XX:+PrintStringTableStatistics -XX:+PrintSafepointStatistics -XX:+PrintGCApplicationStoppedTime" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -208,20 +191,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.GuavaCacheTest.testRawWeak" />
-      <item itemvalue="JUnit.GuavaCacheTest.testStrong" />
-      <item itemvalue="JUnit.JacksonControllerTest" />
-      <item itemvalue="Spring Boot.Application" />
-      <item itemvalue="JUnit.UserServiceImplTest.test" />
       <item itemvalue="Application.MyBatisStartUp" />
+      <item itemvalue="JUnit.GuavaCacheTest.testRawWeak" />
+      <item itemvalue="JUnit.JacksonControllerTest" />
+      <item itemvalue="JUnit.UserServiceImplTest.test" />
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Application.YunaInvocationHandler" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.YunaInvocationHandler" />
         <item itemvalue="Application.MyBatisStartUp" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="JUnit.UserServiceImplTest.test" />
         <item itemvalue="JUnit.JacksonControllerTest" />
-        <item itemvalue="JUnit.GuavaCacheTest.testStrong" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +230,9 @@
       <workItem from="1600652938158" duration="30304000" />
       <workItem from="1603276574556" duration="659000" />
       <workItem from="1603277943896" duration="8271000" />
-      <workItem from="1603346606663" duration="31949000" />
+      <workItem from="1603346606663" duration="63524000" />
+      <workItem from="1604998473221" duration="67000" />
+      <workItem from="1604998616185" duration="10645000" />
     </task>
     <servers />
   </component>
@@ -274,24 +259,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/context/support/AbstractApplicationContext.class</url>
-          <line>271</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.7.RELEASE/spring-boot-2.1.7.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java</url>
-          <line>312</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.7.RELEASE/spring-boot-2.1.7.RELEASE-sources.jar!/org/springframework/boot/web/servlet/context/ServletWebServerApplicationContext.java</url>
           <line>175</line>
           <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.7.RELEASE/spring-boot-2.1.7.RELEASE-sources.jar!/org/springframework/boot/web/servlet/context/ServletWebServerApplicationContext.java</url>
-          <line>200</line>
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/brmayi/yuna/controller/EncryptionTest.java</url>
@@ -328,7 +298,22 @@
           <line>337</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/brmayi/yuna/controller/JacksonController.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../jdk8/src.zip!/java/util/regex/Matcher.java</url>
+          <line>534</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="jsons.get(&quot;3&quot;)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

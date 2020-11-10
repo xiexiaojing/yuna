@@ -1,66 +1,76 @@
 package com.brmayi.yuna.mybatis;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
 import com.brmayi.yuna.model.User;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.common.collect.Lists;
 import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
 
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
+import java.sql.*;
 import java.util.Arrays;
-import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class YunaInvocationHandler implements InvocationHandler {
+    public static final String DBDRIVER = "org.gjt.mm.mysql.Driver";
+    public static final String DBURL = "jdbc:mysql://localhost:3306/mydb";
+    //现在使用的是mysql数据库，是直接连接的，所以此处必须有用户名和密码
+    public static final String USERNAME = "root";
+    public static final String PASSWORD = "mysqladmin";
+
     @Override
-    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.println("con db");
-        System.out.println(method.getAnnotatedReturnType().getType().getTypeName());
-        if(args!=null) {
-            System.out.println(Arrays.toString(args));
-        }
-
-        Select select = method.getAnnotation(Select.class);
-        if(select != null) {
-            String s = select.value()[0];
-            System.out.println(s);
-            if(method.getAnnotatedReturnType().getType() instanceof ParameterizedType){
-                System.out.println("---------------"+method.getAnnotatedReturnType());
-                ParameterizedType pt = (ParameterizedType)method.getAnnotatedReturnType().getType();
-                Class<?> c = (Class<?>) pt.getActualTypeArguments()[0];
-                String json = JSONArray.toJSONString(Lists.newArrayList(new User()));
-                System.out.println("+++++++++++++++"+json);
-                ObjectMapper objectMapper = new ObjectMapper();
-                return objectMapper.readValue(json, List.class);
-            } else {
-                System.out.println("==============="+method.getAnnotatedReturnType());
-                Class<?> c = (Class<?>) method.getAnnotatedReturnType().getType();
-                String json = JSONArray.toJSONString(new User());
-                System.out.println("+++++++++++++++===="+json);
-                ObjectMapper objectMapper = new ObjectMapper();
-                return objectMapper.readValue(json, c);
-            }
-
-        }
-        Update update = method.getAnnotation(Update.class);
-        if(update != null) {
-            String s = update.value()[0];
-            System.out.println(s);
-            return 1;
-        }
+    public Object invoke(Object proxy, Method method, Object[] args) throws Exception{
+        Object result = null;
         Insert insert = method.getAnnotation(Insert.class);
-        if(insert != null) {
-            String s = insert.value()[0];
-            System.out.println(s);
+        if (insert != null) {
+            String sql = insert.value()[0];
+            System.out.println("插入语句为"+s);
             YunaSqlDeal yunaSqlDeal = new YunaSqlDeal();
-            yunaSqlDeal.insert(s, Arrays.toString(args));
-            return 1;
+            yunaSqlDeal.insert(sql, Arrays.toString(args));
+
+            //1、加载驱动程序
+            try {
+                Class.forName(DBDRIVER);
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+            //2、连接数据库
+            //通过连接管理器连接数据库
+            //数据库连接对象
+            Connection conn = null;
+            try {
+                //在连接的时候直接输入用户名和密码才可以连接
+                conn = DriverManager.getConnection(DBURL, USERNAME, PASSWORD);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            composeStatement(sql, args[0], conn);
         }
-        return null;
+        return 1;
+    }
+    private static final String PATTERN = "#\\{[A-Za-z0-9]+\\}";
+    private static Pattern pattern = Pattern.compile("("+PATTERN+")");
+
+    public static void composeStatement(String sql, Object obj, Connection conn) throws Exception{
+        PreparedStatement stmt = conn.prepareStatement(sql.replaceAll(PATTERN, ""));
+        Matcher m= pattern.matcher(sql);
+        int i=1;
+        while(m.find()) {
+            System.out.println(m.group());
+            String group = m.group();
+            String fieldName = group.replace("#{","").replace("}","");
+            Field field = User.class.getDeclaredField(fieldName);
+            field.setAccessible(true);
+            if("java.lang.Integer".equals(field.getType().getName())) {
+                System.out.println("stmt.setInt("+i+","+field.get(obj)+")");
+                stmt.setInt(i, Integer.parseInt(field.get(obj).toString()));
+            } else if("java.lang.String".equals(field.getType().getName())) {
+                stmt.setString(i, field.get(obj).toString());
+            }
+            i++;
+        }
+        stmt.execute();
+        stmt.close();
+        conn.close();
     }
 }
