@@ -17,10 +17,7 @@ public class YunaSqlDeal {
         return 1;
     }
 
-    public static Map<String, JSONObject> gray(String biz, long cacheInMills) {
-        if(cacheInMills>0) {
-            //先试图缓存中取数据，取不到再RPC调用。如果从rpc调用则将结果缓存cacheInMills时间
-        }
+    public static Map<String, JSONObject> gray(String biz) {
         Map<String, JSONObject> jsons = new HashMap<>();
         if("person".equals(biz)) {
             User user1 = new User();
@@ -46,7 +43,6 @@ public class YunaSqlDeal {
             System.out.println("根据" + biz + "获取到的灰度中数据如下" + jsons);
         } else {
             Pojo pojo = new Pojo();
-            pojo.setId(1);
             pojo.setValue("红楼梦");
             jsons.put("3", (JSONObject) JSONObject.toJSON(pojo));
         }
@@ -73,7 +69,6 @@ public class YunaSqlDeal {
             users.add(user5);
         } else {
             Pojo pojo = new Pojo();
-            pojo.setId(2);
             pojo.setValue("西游记");
             users.add(pojo);
         }
@@ -90,7 +85,6 @@ public class YunaSqlDeal {
             return user3;
         } else {
             Pojo pojo = new Pojo();
-            pojo.setId(3);
             pojo.setValue("三国");
             return pojo;
         }

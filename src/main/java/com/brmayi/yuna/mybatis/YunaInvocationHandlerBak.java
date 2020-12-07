@@ -70,7 +70,7 @@ public class YunaInvocationHandlerBak implements InvocationHandler {
             if(StringUtils.isNotEmpty(gray.biz())) {
                 biz = gray.biz();
             }
-            Map<String, JSONObject> jsons = YunaSqlDeal.gray(biz, gray.cacheInMills());
+            Map<String, JSONObject> jsons = YunaSqlDeal.gray(biz);
             if (method.getAnnotatedReturnType().getType() instanceof ParameterizedType) {
                 ParameterizedType pt = (ParameterizedType) method.getAnnotatedReturnType().getType();
                 Class<?> c = (Class<?>) pt.getActualTypeArguments()[0];

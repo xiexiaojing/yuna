@@ -22,7 +22,6 @@ public class JacksonControllerTest {
     @Test
     public void writePojoAsString() throws Exception {
         Pojo pojo = new Pojo();
-        pojo.setId(1);
         pojo.setValue("纵情向前");
         String result = codecController.writePojoAsString(pojo);
         System.out.print(result);
@@ -31,7 +30,6 @@ public class JacksonControllerTest {
     @Test
     public void writeListAsString() throws Exception {
         Pojo pojo = new Pojo();
-        pojo.setId(1);
         pojo.setValue("纵情向前");
         String result = "";
         for (int i = 0; i < 10; i++) {

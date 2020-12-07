@@ -10,6 +10,4 @@ import java.lang.annotation.*;
 @Indexed
 public @interface Gray {
     String biz();
-    String token();
-    long cacheInMills() default 0;
 }

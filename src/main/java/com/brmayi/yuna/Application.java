@@ -1,5 +1,6 @@
 package com.brmayi.yuna;
 
+import com.brmayi.yuna.model.User;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.util.thread.QueuedThreadPool;
 import org.springframework.boot.SpringApplication;
@@ -14,7 +15,10 @@ import java.util.concurrent.TimeUnit;
 @SpringBootApplication(scanBasePackages = "com.brmayi.yuna", exclude = {DataSourceAutoConfiguration.class})
 public class Application {
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
-        
+        User user = new User();
+        user.setAge(1);
+        user.setName("1");
+        Integer i = null;
+        System.out.println(Math.min(i, 1));
     }
 }

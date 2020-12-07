@@ -1,9 +1,15 @@
 package com.brmayi.yuna.model;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-@Data
-public class User {
+import java.io.Serializable;
+
+@Setter
+@Getter
+@ToString(callSuper = true)
+public class User extends Pojo{
     private Integer id;
     private String name;
     private String password;

@@ -1,6 +1,7 @@
 package com.brmayi.yuna.controller;
 
 import com.brmayi.yuna.model.Pojo;
+import com.brmayi.yuna.model.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Lists;
 import javafx.util.Pair;
@@ -8,14 +9,18 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import javax.validation.Valid;
 import java.util.List;
 
 @RestController
 public class JacksonController {
+    @Resource
+    private User user;
 
     @GetMapping("/writeStringAsString")
     public String writeStringAsString(String toWrite) throws Exception {
+        System.out.println(user.getAge());
         ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.writeValueAsString(toWrite);
     }
