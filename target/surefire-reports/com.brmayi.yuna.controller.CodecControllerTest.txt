@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.brmayi.yuna.controller.CodecControllerTest
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.87 sec

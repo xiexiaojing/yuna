@@ -1,4 +1,0 @@
-[MASTER] 15:27:37.030 [pool-2-thread-1] WARN  TimeController - Phase INITIALIZATION lasted too long, 3 seconds more than allowed.
-[MASTER] 15:27:43.845 [pool-2-thread-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: No generators of type class java.lang.Object
-[MASTER] 15:27:58.363 [pool-2-thread-1] WARN  TestSuiteGenerator - JUnit checking timed out
-[MASTER] 15:27:58.364 [pool-2-thread-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 5 seconds more than allowed.
