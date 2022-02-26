@@ -81,21 +81,23 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.jest.jest_package" value="" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.brmayi.yuna.controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.brmayi.yuna.controller" />
+      <recent name="com.brmayi.yuna.config" />
       <recent name="com.brmayi.yuna.mybatis" />
       <recent name="com.brmayi.yuna.mapper" />
       <recent name="com.brmayi.yuna" />
-      <recent name="com.brmayi.yuna.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -110,7 +112,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VolatileTest.run">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="YunaInvocationHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.brmayi.yuna.mybatis.YunaInvocationHandler" />
       <module name="yuna" />
@@ -207,10 +209,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application" />
         <item itemvalue="JUnit.VolatileTest.run" />
         <item itemvalue="JUnit.VolatileTest.noVolatile" />
         <item itemvalue="JUnit.VolatileTest.noVolatile (1)" />
-        <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Application.YunaInvocationHandler" />
       </list>
     </recent_temporary>
@@ -243,6 +245,7 @@
       <workItem from="1606111242798" duration="5966000" />
       <workItem from="1606310165417" duration="15839000" />
       <workItem from="1607308789456" duration="5516000" />
+      <workItem from="1645866694867" duration="5124000" />
     </task>
     <servers />
   </component>
@@ -303,22 +306,9 @@
           <line>337</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/brmayi/yuna/controller/JacksonController.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/brmayi/yuna/model/Version.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
-      <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="context" />
-      </configuration>
       <configuration name="Application">
         <watch expression="jsons.get(&quot;3&quot;)" language="JAVA" />
       </configuration>

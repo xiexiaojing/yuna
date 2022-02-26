@@ -3,7 +3,6 @@ package com.brmayi.yuna.controller;
 import com.brmayi.yuna.service.ShowUndeclared;
 import com.brmayi.yuna.service.ShowUndeclaredService;
 import com.brmayi.yuna.util.ObjProxy;
-import com.google.common.collect.Lists;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,6 +14,7 @@ import java.lang.reflect.Proxy;
 import java.math.BigDecimal;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -87,7 +87,7 @@ public class ExceptionController {
     public String showIllegalArgumentException() {
         ShowUndeclared service = new ShowUndeclaredService();
         Class<?>[] classes = service.getClass().getInterfaces();
-        List<Class> list = Lists.newArrayList();
+        List<Class> list = new ArrayList<>();
         for (int i = 0; i <= 65537; i++) {
             list.addAll(Arrays.asList(classes));
         }

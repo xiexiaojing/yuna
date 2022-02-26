@@ -1,11 +1,8 @@
 package com.brmayi.yuna.mybatis;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.brmayi.yuna.model.Pojo;
 import com.brmayi.yuna.model.User;
-import com.fasterxml.jackson.annotation.JsonAlias;
-import com.google.common.collect.Lists;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -50,7 +47,7 @@ public class YunaSqlDeal {
     }
 
     public static List mockSelectList(String biz) {
-        List users = Lists.newArrayList();
+        List users = new ArrayList();
         if("person".equals(biz)) {
             User user3 = new User();
             user3.setId(3);
