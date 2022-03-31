@@ -5,13 +5,12 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 
 import java.lang.reflect.Field;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class YunaApplicationContext {
     private static Map<String, Object> singletonObjects = Maps.newHashMap();
+    private final Map<String, Object> earlySingletonObjects = Maps.newHashMap();
+    private final Map<String, ObjectFactory<?>> singletonFactories = Maps.newHashMap();
     private static Map<String, BeanDefinition> beanDefinitionMap = Maps.newHashMap();
     private static List<BeanPostProcessor> postProcessorList = Lists.newArrayList();
 
@@ -43,17 +42,46 @@ public class YunaApplicationContext {
         if (BeanDefinition.getScope().equals("singleton")) {
             Object object = singletonObjects.get(beanName);
             if (object == null) {
-                object = createBean(BeanDefinition.getClazz(), beanName);//实例化
-                singletonObjects.put(beanName, object);
+                object = earlySingletonObjects.get(beanName);
+                if (object == null) {
+                    //如果是接口，先实例化三级缓存
+                    if (BeanDefinition.getClazz().isInterface()) {
+                        addSingletonFactory(beanName, new MapperFactory(BeanDefinition.getClazz()));
+
+                        ObjectFactory singletonFactory = singletonFactories.get(beanName);
+
+                        object = singletonFactory.getObject();
+                        this.earlySingletonObjects.put(beanName, object);
+                        this.singletonFactories.remove(beanName);
+                    } else {//如果是对象，直接实例化二级缓存
+                        this.earlySingletonObjects.put(beanName, BeanDefinition.getClazz().newInstance());
+                    }
+
+                    object = createBean(BeanDefinition.getClazz(), beanName, object);//实例化
+                    singletonObjects.put(beanName, object);
+                }
             }
             return object;
         } else {
-            return createBean(BeanDefinition.getClazz(), beanName);
+            return createBean(BeanDefinition.getClazz(), beanName, null);
         }
     }
 
-    private Object createBean(Class clazz, String beanName) throws Exception {
-        Object object = clazz.newInstance();//实例化
+    protected void addSingletonFactory(String beanName, ObjectFactory<?> singletonFactory) {
+        synchronized (this.singletonObjects) {
+            if (!this.singletonObjects.containsKey(beanName)) {
+                this.singletonFactories.put(beanName, singletonFactory);
+                this.earlySingletonObjects.remove(beanName);
+            }
+        }
+    }
+
+    private Object createBean(Class clazz, String beanName, Object tempObject) throws Exception {
+        if (tempObject == null) {
+            tempObject = clazz.newInstance();//实例化
+        }
+
+        Object object = tempObject;
         Field[] fields = clazz.getDeclaredFields();
         Arrays.stream(fields)
                 .filter(f -> f.isAnnotationPresent(Autowired.class))
@@ -79,12 +107,12 @@ public class YunaApplicationContext {
     }
 
     private void loadBeanDefinition(Class c, Class configClass) {
-        BeanDefinition BeanDefinition = new BeanDefinition();
-        BeanDefinition.setClazz(c);
+        BeanDefinition beanDefinition = new BeanDefinition();
+        beanDefinition.setClazz(c);
         Scope scope = (Scope) configClass.getAnnotation(c);
-        BeanDefinition.setScope(scope == null ? "singleton" : scope.value());
+        beanDefinition.setScope(scope == null ? "singleton" : scope.value());
 
         Component component = (Component) c.getAnnotation(Component.class);
-        beanDefinitionMap.put(component.value(), BeanDefinition);
+        beanDefinitionMap.put(component.value(), beanDefinition);
     }
 }
