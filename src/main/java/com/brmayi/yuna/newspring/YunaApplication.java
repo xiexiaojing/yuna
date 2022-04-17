@@ -1,9 +1,15 @@
 package com.brmayi.yuna.newspring;
 
+import com.brmayi.yuna.model.User;
+import com.brmayi.yuna.model.Version;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 public class YunaApplication {
     public static void main(String[] args) throws Exception {
-        YunaApplicationContext yunaApplicationContext = new YunaApplicationContext(YunaConfig.class);
-        UserService userService= (UserService)yunaApplicationContext.getBean("userService");
-        userService.test();
+        ApplicationContext yunaApplicationContext = new AnnotationConfigApplicationContext(YunaConfig.class);
+        User user = (User) yunaApplicationContext.getBean("user");
+        UserFactoryBean userFactoryBean = (UserFactoryBean) yunaApplicationContext.getBean("&user");
+        System.out.println(userFactoryBean);
     }
 }

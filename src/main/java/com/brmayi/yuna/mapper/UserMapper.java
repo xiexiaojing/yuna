@@ -1,7 +1,7 @@
 package com.brmayi.yuna.mapper;
 
-import com.brmayi.yuna.newspring.Component;
 import com.brmayi.yuna.model.User;
+import com.brmayi.yuna.newspring.Component;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 

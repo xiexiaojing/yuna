@@ -3,6 +3,7 @@ package com.brmayi.yuna;
 import com.brmayi.yuna.mapper.BookMapper;
 import com.brmayi.yuna.mapper.UserMapper;
 import com.brmayi.yuna.model.User;
+import com.brmayi.yuna.model.Version;
 import com.brmayi.yuna.mybatis.YunaSession;
 import org.eclipse.jetty.util.security.Credential;
 
