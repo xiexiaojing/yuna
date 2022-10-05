@@ -40,8 +40,7 @@ public class JacksonController {
     public String writeListAsString(Pojo toWrite) throws Exception {
         pojos.add(toWrite);
         ObjectMapper objectMapper = new ObjectMapper();
-        String r = objectMapper.writeValueAsString(pojos);
-        return r;
+        return objectMapper.writeValueAsString(pojos);
     }
 
 

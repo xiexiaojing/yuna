@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
+
 @Component(value = "userMapper")
 public interface UserMapper {
     @Insert("INSERT INTO person(name,age) VALUES (#{name},#{age}")

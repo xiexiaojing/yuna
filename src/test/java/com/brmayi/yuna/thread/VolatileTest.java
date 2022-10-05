@@ -1,11 +1,7 @@
 package com.brmayi.yuna.thread;
 
 import com.brmayi.yuna.model.Version;
-import org.apache.commons.lang.StringUtils;
-import org.apache.commons.lang.math.NumberUtils;
 import org.junit.Test;
-
-import java.util.Arrays;
 
 public class VolatileTest {
     private boolean endRun = false;
