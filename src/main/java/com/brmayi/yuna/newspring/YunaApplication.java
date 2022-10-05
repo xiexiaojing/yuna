@@ -1,7 +1,6 @@
 package com.brmayi.yuna.newspring;
 
 import com.brmayi.yuna.model.User;
-import com.brmayi.yuna.model.Version;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

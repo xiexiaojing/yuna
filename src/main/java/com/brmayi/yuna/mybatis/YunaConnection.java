@@ -1,8 +1,5 @@
 package com.brmayi.yuna.mybatis;
 
-import javafx.application.Application;
-import javafx.stage.Stage;
-
 import java.sql.*;
 import java.util.Map;
 import java.util.Properties;

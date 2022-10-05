@@ -1,7 +1,6 @@
 package com.brmayi.yuna.controller;
 
 import com.sun.org.apache.xml.internal.security.utils.Base64;
-import org.junit.Before;
 import org.junit.Test;
 
 import javax.crypto.Cipher;
@@ -10,7 +9,6 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.security.Key;
-import java.util.Arrays;
 
 public class EncryptionTest {
 

@@ -22,7 +22,7 @@ public class HelloWorldController {
     public void client() throws Exception {
         SocketChannel socket = SocketChannel.open();
         socket.connect(new InetSocketAddress("127.0.0.1", 520));
-        FileChannel io = new FileInputStream("D:\\photo\\编程一生.JPG").getChannel();
+        FileChannel io = new FileInputStream("D:\\github-cat.jpg").getChannel();
         long begin = System.currentTimeMillis();
         io.transferTo(0, io.size(), socket);
         System.out.println("耗时为" + (System.currentTimeMillis() - begin) + "ms");
