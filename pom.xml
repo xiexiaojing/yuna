@@ -77,7 +77,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.79</version>
+            <version>1.2.83</version>
         </dependency>
         <!--hystrix官网-->
         <dependency>
@@ -108,7 +108,7 @@
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>5.4.3</version>
+            <version>5.8.21</version>
         </dependency>
     </dependencies>
 </project>
