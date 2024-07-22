@@ -1,7 +1,6 @@
 # 经典java学习场景
 很多的场景代码是有对应文章关联的，一些已经在commit里加入了文章地址。以下是一些分类：
 ## 手撕源码类
-对应文章地址
 1. mybatis文件夹  
    mybatis的本质和原理：https://mp.weixin.qq.com/s/QG-4g4jEWFyx47fE9D05vw
 2. newspring文件夹  
