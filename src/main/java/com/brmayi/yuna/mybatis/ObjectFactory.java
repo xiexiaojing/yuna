@@ -1,4 +1,4 @@
-package com.brmayi.yuna.newspring;
+package com.brmayi.yuna.mybatis;
 
 import org.springframework.beans.BeansException;
 

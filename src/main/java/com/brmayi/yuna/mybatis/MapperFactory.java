@@ -1,6 +1,6 @@
-package com.brmayi.yuna.newspring;
+package com.brmayi.yuna.mybatis;
 
-import com.brmayi.yuna.mybatis.YunaSession;
+import com.brmayi.yuna.newspring.Component;
 
 @Component
 public class MapperFactory implements ObjectFactory {

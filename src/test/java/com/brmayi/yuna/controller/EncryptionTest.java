@@ -1,6 +1,6 @@
 package com.brmayi.yuna.controller;
 
-import com.sun.org.apache.xml.internal.security.utils.Base64;
+import cn.hutool.core.codec.Base64;
 import org.junit.Before;
 import org.junit.Test;
 
