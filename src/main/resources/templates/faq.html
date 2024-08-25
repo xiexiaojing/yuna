@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>植物辨别小助手</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        textarea {
+            width: 100%; /* 让输入框宽度可自适应 */
+            max-width: 600px; /* 设置最大宽度 */
+            min-width: 200px; /* 设置最小宽度 */
+            height: 100px; /* 设置初始高度 */
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* 包含内边距和边框 */
+            resize: vertical; /* 允许垂直调整大小 */
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .qa {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+        }
+        .question {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>植物辨别小助手</h1>
+    <div id="qaContainer"></div>
+    <textarea id="question" placeholder="请输入你的问题"></textarea>
+    <button onclick="getAnswer()">提交</button>
+</div>
+
+<script>
+    function getAnswer() {
+        const questionInput = document.getElementById("question");
+        const question = questionInput.value.trim();
+        const qaContainer = document.getElementById("qaContainer");
+
+        if (question === "") {
+            alert("请先输入问题。");
+            return;
+        }
+
+        // 回答逻辑
+        let answer = "";
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', '/ai/plantFaq?text='+question, true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    answer = xhr.responseText;
+                        // 创建新的问答元素
+                        const qaDiv = document.createElement("div");
+                        qaDiv.className = "qa";
+                        qaDiv.innerHTML = `<div class="question">问题: ${question}</div><div>答案: ${answer}</div>`;
+
+                        // 将新的问答添加到容器中
+                        qaContainer.appendChild(qaDiv);
+
+                        // 清空输入框
+                        questionInput.value = "";
+                } else {
+                    console.error('发生错误:', xhr.statusText);
+                }
+            }
+        };
+        xhr.send();
+    }
+</script>
+
+</body>
+</html>

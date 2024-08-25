@@ -15,7 +15,7 @@ import dev.langchain4j.model.zhipu.ZhipuAiStreamingChatModel;
 import java.util.Date;
 import java.util.List;
 
-import static com.brmayi.yuna.ai.ZhipinConstants.API_KEY;
+import static com.brmayi.yuna.ai.ZhipinConfig.API_KEY;
 
 public class MessageLearn {
 
