@@ -3,6 +3,7 @@ package com.brmayi.yuna.ai;
 import dev.langchain4j.model.image.ImageModel;
 import dev.langchain4j.model.zhipu.ZhipuAiChatModel;
 import dev.langchain4j.model.zhipu.ZhipuAiClient;
+import dev.langchain4j.model.zhipu.ZhipuAiEmbeddingModel;
 import dev.langchain4j.model.zhipu.ZhipuAiImageModel;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,6 +19,12 @@ public class ZhipinConfig {
             .build();
     public static final ImageModel imageModel = ZhipuAiImageModel.builder()
             .apiKey(API_KEY)
+            .build();
+    public static final ZhipuAiEmbeddingModel embeddingModel = ZhipuAiEmbeddingModel.builder()
+            .apiKey(API_KEY)
+            .logRequests(false)
+            .logResponses(false)
+            .maxRetries(0)
             .build();
 
     @Bean
