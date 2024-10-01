@@ -5,9 +5,13 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${MYSQL_ADDRESS}/${MYSQL_DATABASE:springboot_demo}
-    username: ${MYSQL_USERNAME}
-    password: ${MySQL_PASSWORD}
+    url: jdbc:mysql://mysqlb139ddcbdeea.rds.ivolces.com:3306/dev_flowtracker?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true
+    username: dev_flowtracker_rw
+    password: UxkLJzIRku6ya95l4
 
 mybatis:
   mapper-locations: classpath*:mapper/*Mapper.xml
+
+dingtalk:
+  accessToken: 817cc3b9bb03d8a1b58f1f8386e1227eaa1f1f2d9836aa65e1a5e4e03f1e655b
+  secret: SECc3f0a3b1d95dfce876809823ef8fef2b0284b260880bcb8e883e38199c32ec3f

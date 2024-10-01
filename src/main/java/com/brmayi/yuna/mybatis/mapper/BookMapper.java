@@ -1,4 +1,4 @@
-package com.brmayi.yuna.mapper;
+package com.brmayi.yuna.mybatis.mapper;
 
 import com.brmayi.yuna.model.Pojo;
 import com.brmayi.yuna.model.User;

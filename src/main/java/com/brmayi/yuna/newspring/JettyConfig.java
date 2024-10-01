@@ -1,4 +1,4 @@
-package com.brmayi.yuna.config;
+package com.brmayi.yuna.newspring;
 
 
 import org.eclipse.jetty.util.thread.QueuedThreadPool;

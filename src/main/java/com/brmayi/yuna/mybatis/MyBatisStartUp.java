@@ -1,12 +1,9 @@
 package com.brmayi.yuna.mybatis;
 
 import cn.hutool.core.lang.ClassScanner;
-import com.brmayi.yuna.mapper.BookMapper;
-import com.brmayi.yuna.mapper.UserMapper;
+import com.brmayi.yuna.mybatis.mapper.BookMapper;
+import com.brmayi.yuna.mybatis.mapper.UserMapper;
 import com.brmayi.yuna.model.User;
-import com.brmayi.yuna.mybatis.MapperFactory;
-import com.brmayi.yuna.mybatis.ObjectFactory;
-import com.brmayi.yuna.mybatis.YunaSession;
 import com.brmayi.yuna.newspring.*;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
