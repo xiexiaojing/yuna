@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <jackson.version>2.16.1</jackson.version>
+        <jackson.version>2.18.6</jackson.version>
         <retrofit.version>2.9.0</retrofit.version>
         <okhttp.version>4.12.0</okhttp.version>
         <langchain4j.version>0.33.0</langchain4j.version>
